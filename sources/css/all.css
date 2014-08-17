@@ -1,0 +1,238 @@
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "News Cycle","Open Sans",Helvetica,Arial;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0 1em;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0886da;
+  text-decoration: none;
+}
+
+fieldset {
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: 7px;
+}
+
+input,
+textarea {
+  border: 1px solid #dbdbdb;
+  padding: 7px 10px;
+  margin: 0;
+  outline: none;
+  border-radius: 7px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #555;
+  box-shadow: 0 0 5px -1px #555;
+  -ms-box-shadow: 0 0 5px -1px #555;
+}
+
+.nav li a {
+  padding: 0.5em 0.7em;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.smaller {
+  font-size: 0.9em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.vmiddle {
+  vertical-align: middle;
+}
+
+.margined {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.padded {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.body,
+.footer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.base-content {
+  background-color: #00a2ff;
+  overflow: hidden;
+  border-radius: 1.5em 1.5em 0 0;
+  box-shadow: 1em 2em 4em rgba(0,0,0,0.2),-1em 2em 4em rgba(0,0,0,0.2);
+  -ms-box-shadow: 1em 2em 4em rgba(0,0,0,0.2),-1em 2em 4em rgba(0,0,0,0.2);
+}
+
+nav {
+  padding: 1em 1.5em 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5em 1.5em 1.5em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#content {
+  float: left;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#content.with-aside {
+  width: 75%;
+}
+
+#aside {
+  float: left;
+  width: 25%;
+  padding: 1em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+footer {
+  color: #fff;
+  box-shadow: 0px -1px 5px rgba(0,0,0,0.15);
+  -ms-box-shadow: 0px -1px 5px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+footer a {
+  color: #eee;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .footer-inner {
+  padding: 1em 1% 0;
+  box-shadow: inset 0px 0px 200px rgba(0,0,0,0.1);
+  -ms-box-shadow: inset 0px 0px 200px rgba(0,0,0,0.1);
+  background: #0886da;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0886da), color-stop(100%, #479ed8));
+  background: -webkit-linear-gradient(top, #0886da 0%, #479ed8 100%);
+  background: linear-gradient(to bottom, #0886da 0%,#479ed8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$one, endColorstr=$two,GradientType=0 );
+}
+
+footer .copyright {
+  text-align: right;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 2em;
+  font-size: 0.9em;
+}
+
+#system-message-container {
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  max-width: 400px;
+  padding: 1.3em 1.1em;
+  color: #555;
+  z-index: 10000;
+  border: 1px solid #979797;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(top, #fff 0%, #ececec 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ececec 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#ececec 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$one, endColorstr=$two,GradientType=0 );
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.5);
+  -ms-box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.5);
+}
+
+#system-message-container dl#system-message {
+  margin: 0;
+}
+
+.system-message-empty {
+  display: none;
+}

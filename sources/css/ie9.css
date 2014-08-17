@@ -1,0 +1,41 @@
+@media all and (min-width: 801px) {
+  .main-nav ul {
+    text-align: right;
+  }
+
+  .main-nav ul > li {
+    display: inline-block !important;
+  }
+
+  .main-nav ul > li a {
+    padding: 0.7em 1.5em !important;
+  }
+}
+
+.featured-content li {
+  display: inline-block !important;
+  vertical-align: top;
+}
+
+@media all and (max-width: 800px) {
+  .featured-content li {
+    width: 100%;
+  }
+}
+
+.footer-box > div {
+  vertical-align: top;
+  display: inline-block !important;
+}
+
+@media all and (max-width: 800px) {
+  .footer-box > div {
+    width: 45%;
+  }
+}
+
+@media all and (min-width: 801px) {
+  .footer-box > div {
+    width: 30%;
+  }
+}

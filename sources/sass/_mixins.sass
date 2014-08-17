@@ -1,0 +1,57 @@
+=border-sizing()
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+=border-radius($radius)
+  border-radius: $radius
+  -webkit-border-radius: $radius
+
+=translate($x,$y)
+  -webkit-transform: translate($x,$y)
+  -moz-transform: translate($x,$y)
+  -ms-transform: translate($x,$y)
+  -o-transform: translate($x,$y)
+  transform: translate($x,$y)
+
+=box-shadow($param)
+  box-shadow: $param
+  -webkit-box-shadow: $param
+  -moz-box-shadow: $param
+  -ms-box-shadow: $param
+
+=box-shadow2($p1,$p2)
+  box-shadow: $p1, $p2
+  -webkit-box-shadow: $p1, $p2
+  -moz-box-shadow: $p1, $p2
+  -ms-box-shadow: $p1, $p2
+
+=transition($prop:all, $time:0.3s, $timing:ease)
+  -webkit-transition: $prop $time $timing
+  -moz-transition: $prop $time $timing
+  -ms-transition: $prop $time $timing
+  -o-transition: $prop $time $timing
+  transition: $prop $time $timing
+
+=gradient($one, $two)
+  background: $one
+  background: -moz-linear-gradient(top, $one 0%, $two 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$one), color-stop(100%,$two))
+  background: -webkit-linear-gradient(top, $one 0%,$two 100%)
+  background: -o-linear-gradient(top, $one 0%,$two 100%)
+  background: -ms-linear-gradient(top, $one 0%,$two 100%)
+  background: linear-gradient(to bottom, $one 0%,$two 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$one, endColorstr=$two,GradientType=0 )
+
+=flexbox()
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+=flex($prop)
+  -webkit-box-flex: $prop
+  -moz-box-flex: $prop
+  -webkit-flex: $prop
+  -ms-flex: $prop
+  flex: $prop
